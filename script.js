@@ -13,7 +13,7 @@ function realProb() {
   
   if (ans < 100) {
     answer.innerHTML = ans;
-  } else {
+  } else if (ans == 100) {
     answer.innerHTML = ">99.99999999999999"
   }
 }

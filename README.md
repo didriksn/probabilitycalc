@@ -1,5 +1,5 @@
 # Complementary probability calculator
-Takes in a percentage and numbver of attempts to calculate what the probability of that event happening
+Takes in a percentage and number of attempts to calculate what the probability of that event happening
 
 ## Example
 ```

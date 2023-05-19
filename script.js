@@ -1,19 +1,20 @@
+const submit = document.getElementById("submit");
+submit.addEventListener('click', function() {
+  realProb()
+})
+
+
 function realProb() {
-  let chance = document.getElementById("chance").value;
-  let perms = document.getElementById("perms").value;
-  let answer = document.getElementById("answer");
+  const chance = document.getElementById("chance").value;
+  const perms = document.getElementById("perms").value;
+  const answer = document.getElementById("answer");  
 
-  if (chance < 0 || chance > 100 || perms < 1) {
-    return;
-  }
+  if (chance < 0 || chance > 100 || perms < 1) return;
 
-  let frac = (100 - chance) / 100;
-  let calc = Math.pow(frac, perms);
-  let ans = (1 - calc) * 100;
+  const frac = (100 - chance) / 100;
+  const calc = Math.pow(frac, perms);
+  const ans = (1 - calc) * 100;
   
-  if (ans < 100) {
-    answer.innerHTML = ans;
-  } else if (ans == 100) {
-    answer.innerHTML = ">99.99999999999999"
-  }
+  if (ans < 100) answer.textContent = ans; 
+  else if (ans == 100) answer.textContent = ">99.99999999999999"
 }

@@ -4,14 +4,14 @@ Takes in a percentage and number of attempts to calculate what the probability o
 ## Example
 ```
 chance = 10%
-attempts = 10
+attempts = 5
 
 
 Probability of the event not happening = 90% or 0.9
 
-The probability of the event not happening in all ten trials is (0.9)^10, which is approximately 0.3487.
+The probability of the event not happening in all five trials is (0.9)^5, which is approximately 0.59049.
 
-1 - 0.3487 = 0.6513 or 65.13%.
+1 - 0.59049 = 0.40951 or 40.951%.
 
-So the final answer is 65.13%
+So the final answer is 40.951%
 ```

@@ -10,9 +10,9 @@ function realProb() {
   const calc = Math.pow(frac, perms.value);
   const ans = (1 - calc) * 100;
   
-  if (ans < 100 || ans > 0) answer.textContent = ans; 
-  else if (ans == 100) answer.textContent = ">99.99999999999999"
-  else if (ans == 0) answer.textContent = "<0.00000000000001"
+  if (ans < 100 || ans > 0) answer.textContent = ans + "%"; 
+  else if (ans == 100) answer.textContent = ">99.99999999999999%"
+  else if (ans == 0) answer.textContent = "<0.00000000000001%"
 
 }
 
